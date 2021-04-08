@@ -22,5 +22,12 @@ function draw(){
     box1.display();
     box2.display();
     ground.display();
+    keyPressed();
    
+}
+
+function keyPressed(){
+    if(keyCode===DOWN_ARROW){
+        Matter.Body.setStatic(box2.body,false);
+    }
 }
